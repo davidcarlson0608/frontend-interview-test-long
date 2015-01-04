@@ -50,12 +50,12 @@ While some parts were more challenging than others, overall the requirements wer
 I enjoyed the project, and definitely learned a thing or two along the way.
 This has reminded me that I need to work on my CSS a bit more, because it took me longer than I had expected for certain things.
 
-Total time for required sections: 370mins (~6hrs) [Plus an hour wasted with JQuery UI dialog, so more like 7hrs]
+Total time for required sections: 370mins (~6hrs) [430 mins including wasted time on JQuery UI Dialog]
 
 Total time for extra credit work: 110mins (~1.9hrs)
 
 Total time for documentation/cleanup: 45mins (across the project)
 
-Total time spent: 525mins (8.75hrs)
+Total time spent: 585mins (9.75hrs)
 
 Thanks for reading! :]
