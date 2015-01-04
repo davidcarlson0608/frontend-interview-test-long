@@ -31,6 +31,7 @@ br{
 #header{
 	background: rgba( 0, 0, 0, 0.7);
 	padding: 10px 5px;
+	height: 45px; /*The header was given height to match mockup */
 	box-shadow: 0px 1px 5px #fff;
 }
 
@@ -67,28 +68,194 @@ br{
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #fff;
 	border: 1px solid #6FD6F7;
-
-
-
+	background-color: #00f;/*Added color because grey buttons are dull buttons*/
 }
 
 #search input[type="submit"]:hover{
-	
+	background-color: #0ff; /*Changed the background color to show an interaction*/
+	border: 1px solid #00f; /*Switched up the border because... well why not?*/
 }
 
 
+/******
+Start of added CSS
+By: David Carlson
+******/
+
+/****** NAVIGATION ******/
+
+/*Styling for search box - adds white box shadow on focus */
+#search input[name="terms"]:focus {
+	box-shadow: 0px 0px 6px 2px white;
+}
+
+/*Styling for the right side of the header */
+#nav_bar{
+	display: inline;
+	float: right;
+	margin-top: 15px;
+}
+
+/*Styling for the text links on the right of the header */
+.nav_buttons{
+	display: inline-block;
+	margin-right: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*Styling for the profile picture on the right of the header */
+#profile_icon img{
+	display: inline;
+	float: right;
+    max-width:25px;
+	margin: 10px 10px 0 0;
+}
 
 
+/******MAIN PAGE CONTENT******/
 
-/*page content*/
-
+/*page content */
 #page{
 	width: 800px;
-	
-	/*background: rgba( 255, 255, 255, 0.3 );
-	border: 1px solid #ffffff;*/
 	margin: 10px auto 0px;
 	padding: 1em 2em;
 }
+
+/*Styling for the left column */
+#column_one{
+	width: 25%;
+	margin-right:4%;
+	background: #F7F7F7;
+	float: left;
+	border-radius: 4%;
+	padding: 1% 3% 1% 1%;
+}
+
+/*Username styling next to profile picture in left column */
+#column_one p{
+	display: inline;
+}
+
+/*Styling for right column */
+#column_two{
+	width: 65%;
+	background: #F7F7F7;
+	float: right;
+	padding: 1%;
+	border-radius: 2%;
+}
+
+/*Styling for the "Updates" header */
+h2 {
+	margin-top: .25em;
+	margin-bottom: 1.5em;
+	font-size: 1.25em;
+}
+
+/*Remove the margin from the comments */
+p{
+	margin:0;
+}
+
+/*Styling for the names within the posts/comments */
+.name {
+	color: #0279C9;
+	font-weight: bold;
+}
+
+/*Styling for the container of each post */
+.post{
+	margin-bottom: 10px;
+}
+
+/*Styling for the image of each post */
+.post img{
+    display:inline-block;
+	vertical-align: top;
+	width: 50px;
+}
+
+/*Styling for the div that contains the text of each post */
+.post_content{
+	display:inline-block;
+	width: 90%;
+}
+
+/*Styling for the paragraphs that contain the text of each post */
+.post_content p{
+	padding-left: 4%;
+	min-height: 50px;
+}
+
+/*Styling for each comment */
+.comment {
+	background: #EDEDED;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-left: 1%;
+	border-bottom: 1px solid #cccccc;
+}
+
+/*Styling for the image of each comment */
+.comment img{
+    display:inline-block;
+	vertical-align: top;
+	width: 25px;
+	padding-left: 1%;
+}
+
+/*Styling for the text of each comment */
+.comment p{
+	display:inline-block;
+	width: 90%;
+	padding-left: 2%;
+	min-height: 0;
+}
+
+/*Styling for div containers that hold the comment text areas */
+.comment_input{
+	margin-left: 1%;
+	background: #EDEDED;
+	padding: 1% .5% .5% .75%;
+}
+
+/*Styling for the text areas */
+.comment_input_field{
+	width:98%;
+	height: 14px;
+}
+
+/*Styling for the footer */
+#footer{
+	width: 97%;
+	float: right;
+	text-align: center;
+	margin: 30px 3% 100px 0;
+}
+
+/*Styling for the div containing the modal div used to add a post - initially hidden */
+#post_modal {
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    z-index: 1000;
+ }
+ 
+ /*Styling for the div that contains the modal content */
+ #post_modal div {
+    width:23%;
+	min-width: 320px;
+    margin: auto;
+	margin-top: 200px;
+    background: #F7F7F7;
+    padding: 15px 0px 20px 25px;
+	border-radius: 4%;
+	border:1px solid;
+}
+
 
 

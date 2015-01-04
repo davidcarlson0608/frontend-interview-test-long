@@ -1,32 +1,82 @@
 <!DOCTYPE HTML >
 <html>
-<head>
-	<title>The network</title>
-	
-	<link rel="stylesheet" type="text/css" href="normalize.css" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
-</head>
-<body>
-	
-	<div id="header">
-		<div id="logo">
-			<img src="images/logo.png" alt="the network"/>
-		</div>	
-		<div id="search">
-			<form method="get" action="#">
-				<input type="search" name="terms" placeholder="Search...."/>
-				<input type="submit" value="Go"/>
-			</form>
-		</div>
-	</div>
-	
-	<div id="page">
 
-	</div>
-	
-	<div>
-		<p>This is a footer mesage</p>
-	</div>
+	<head>
+		<title>The network</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<!--JQuery-->
+		<script src="resources/jquery.js/jquery-1.11.1.min.js"></script>
+		<!--Box.js-->
+		<script type="text/javascript" src="resources/box.js/box.js"></script>
+		<!--My Scripts-->
+		<script src="js/pull_data.js"></script> 
+		<script src="js/add_content.js"></script>
+	</head>
+
+	<body>
 		
-</body>
+		<!--Nav Bar Section-->
+		<div id="header">
+		
+			<!--Logo-->
+			<div id="logo">
+				<img src="images/logo.png" alt="the network"/>
+			</div>	
+			
+			<!--Search Field-->
+			<div id="search">
+				<form method="get" action="#">
+					<input type="search" name="terms" placeholder="Search...."/>
+					<input type="submit" value="Go"/>
+				</form>
+			</div>
+			
+			<!--Profile Picture on Nav Bar-->
+			<div id="profile_icon">
+				<img src="images/profile/daniel-craig.jpg" alt="Profile Picture"/>
+			</div>
+			
+			<!--Home and Post buttons-->
+			<div id="nav_bar">
+				<a class="nav_buttons" href="#">Home</a>
+				<a class="nav_buttons" href="#" id="add_post">Post an update</a>
+			</div>
+
+		</div>
+		
+		<!--Main Page Content-->
+		<div id="page">
+		
+			<!--User Info Column-->
+			<div id="column_one">
+				<img src="images/profile/daniel-craig.jpg" alt="Profile Picture"/>
+				<p>Daniel Craig</p>
+			</div>
+			
+			<!--Posts Column-->
+			<div id="column_two">
+				<h2>Updates</h2>
+			</div>
+			
+		</div>
+		
+		<!--Footer-->
+		<div id="footer">
+			<p>This is a footer message</p>
+		</div>
+		
+		<!--Post pop-up modal-->
+		<div id="post_modal">
+			<div>
+			<h3>Status Update</h3>
+			<textarea placeholder="What's on your mind" id="new_post_field" rows="3" cols="35"></textarea>
+			<br><br>
+			<p>Hit enter to post</p>
+			</div>
+		</div>
+
+	</body>
+
 </html>
